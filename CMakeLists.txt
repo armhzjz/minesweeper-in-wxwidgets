@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(APPantallando VERSION 0.1)
+project(Mineweeper VERSION 0.1)
 configure_file(appconfig.hpp.in appconfig.hpp)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -11,10 +11,14 @@ include(${wxWidgets_USE_FILE})
 
 find_package(Boost REQUIRED)
 
-add_executable(appantallando cAPP.cpp cMain.cpp)
-target_link_libraries(appantallando ${wxWidgets_LIBRARIES} ${Boost_LIBRARIES})
-
-target_include_directories(appantallando PUBLIC
+add_executable(minesweeper cAPP.cpp
+                           cMain.cpp
+                           )
+target_link_libraries(minesweeper
+                      ${wxWidgets_LIBRARIES}
+                      ${Boost_LIBRARIES}
+                      )
+target_include_directories(minesweeper PUBLIC
                            "${PROJECT_BINARY_DIR}"
                            "${PROJECT_SOURCE_DIR}"
                            "${Boost_INCLUDE_DIRS}"

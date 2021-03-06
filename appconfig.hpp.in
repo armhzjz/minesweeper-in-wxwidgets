@@ -1,0 +1,2 @@
+#define APPantallando_VERSION_MAJOR @APPantallando_VERSION_MAJOR@
+#define APPantallando_VERSION_MINOR @APPantallando_VERSION_MINOR@

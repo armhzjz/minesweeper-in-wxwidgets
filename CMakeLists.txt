@@ -24,3 +24,4 @@ target_include_directories(minesweeper PUBLIC
                            "${Boost_INCLUDE_DIRS}"
                            "${wxWidgets_INCLUDE_DIRS}"
                            )
+install(TARGETS minesweeper DESTINATION bin)

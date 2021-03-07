@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 find_package(wxWidgets REQUIRED)
-include(${wxWidgets_USE_FILE})
-
 find_package(Boost REQUIRED)
+
+include(${wxWidgets_USE_FILE})
 
 add_executable(minesweeper cAPP.cpp
                            cMain.cpp
